@@ -1,0 +1,32 @@
+theme = "monokai_pro_spectrum"
+
+[editor]
+# cursorline = true
+line-number = "relative"
+true-color = true
+rulers = [80]
+bufferline = "multiple"
+color-modes = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.statusline]
+mode.normal = "N"
+mode.insert = "I"
+mode.select = "S"
+
+[editor.lsp]
+display-messages = true
+
+[editor.whitespace.render]
+tab = "all"
+
+[editor.whitespace.characters]
+tab = "→"
+tabpad = "·" 
+
+[editor.indent-guides]
+render = true

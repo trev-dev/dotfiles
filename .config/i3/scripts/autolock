@@ -1,0 +1,1 @@
+exec xautolock -time 5 -corners -000 -cornersize 30 -locker ~/.config/i3/lock.sh

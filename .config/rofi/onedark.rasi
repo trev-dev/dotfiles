@@ -1,0 +1,192 @@
+/************************************************
+ * ROFI Color theme
+ * User: trevdev
+ * Copyright: 2018 trevdev
+ ***********************************************/
+
+* {
+  /* Color Pallete */
+
+  black: #282A2E;
+  blackAlt: #3F444A;
+
+  blue: #56b6c2;
+  blueAlt: #63d1df;
+
+  brown: #d19a66;
+  brownAlt: #e5c07b;
+
+  cyan: #61afef;
+  cyanAlt: #67bbff;
+
+  green: #98c379;
+  greenAlt: #abdc88;
+
+  purple: #c678dd;
+  purpleAlt: #e48aff;
+
+  red: #e06c75;
+  redAlt: #ff7b85;
+
+  white: #707880;
+  whiteAlt: #fdfdfd;
+
+  /* Rofi Specific Vars */
+  background-color: rgba(0, 0, 0, 0);
+  background: #222222;
+  normal-background: @background;
+  normal-foreground: @whiteAlt;
+  spacing: 5;
+  urgent-background: rgba(29, 31, 33, 0.17);
+  urgent-foreground: @redAlt;
+}
+
+window {
+  background-color: @background;
+  location: north;
+  padding: 5;
+  y-offset: 50;
+}
+
+mainbox {
+  border:  0;
+  padding: 0;
+}
+
+message {
+  border:       2px 0px 0px ;
+  border-color: @brown;
+  padding:      1px ;
+}
+
+textbox {
+  text-color: @whiteAlt;
+}
+
+listview {
+  fixed-height: 0;
+  border:       2px 0px 0px ;
+  border-color: @brownAlt;
+  spacing:      0px;
+  scrollbar:    true;
+  padding:      2px 0px 0px ;
+}
+
+element {
+  border:  0;
+  padding: 1px;
+}
+
+element-text {
+  background-color: transparent;
+  cursor:           inherit;
+  highlight:        inherit;
+  text-color:       inherit;
+}
+
+element-icon {
+  background-color: transparent;
+  size:             1em;
+  cursor:           inherit;
+  text-color:       inherit;
+}
+
+element normal.normal {
+  background-color: @background;
+  text-color:       @white;
+}
+
+element normal.urgent {
+  background-color: @red;
+  text-color:       @whiteAlt;
+}
+
+element normal.active {
+  background-color: @background;
+  text-color:       @white;
+}
+
+element selected.normal {
+  background-color: @green;
+  text-color:       @whiteAlt;
+}
+
+element selected.urgent {
+  background-color: @red;
+  text-color:       @whiteAlt;
+}
+
+element selected.active {
+  background-color: @background;
+  text-color:       @white;
+}
+
+element alternate.normal {
+  background-color: @black;
+  text-color:       @blueAlt;
+}
+
+element alternate.urgent {
+  background-color: @red;
+  text-color:       @white;
+}
+
+element alternate.active {
+  background-color: @blackAlt;
+  text-color:       @whiteAlt;
+}
+
+/* Disabled. Give it width to enable */
+scrollbar {
+  width:        0px;
+  border:       0px;
+  handle-color: @blueAlt;
+  handle-width: 0px;
+  padding:      0px;
+}
+
+sidebar {
+  border:       2px 0px 0px ;
+  border-color: @brown;
+}
+
+button {
+  spacing:    0;
+  text-color: @cyan;
+}
+
+button.selected {
+  background-color: @blue;
+  text-color:       @whiteAlt;
+}
+
+inputbar {
+  spacing:    0;
+  text-color: @cyan;
+  padding:    1px;
+}
+
+case-indicator {
+  spacing:    0;
+  text-color: @cyanAlt;
+}
+
+entry {
+  spacing:    0;
+  text-color: @cyan;
+}
+
+prompt {
+  spacing:    0;
+  text-color: @purpleAlt;
+}
+
+inputbar {
+  children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
+}
+
+textbox-prompt-colon {
+  expand:     false;
+  str:        ": ";
+  text-color: @cyanAlt;
+}

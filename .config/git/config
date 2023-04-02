@@ -1,0 +1,16 @@
+[commit]
+	gpgSign = true
+
+[gpg]
+	program = "/bin/gpg2"
+
+[init]
+	defaultBranch = "main"
+
+[tag]
+	gpgSign = true
+
+[user]
+	email = "trev@trevdev.ca"
+	name = "Trevor Richards"
+	signingKey = "0FB7D06B4A2AF07EAD5B1169183B63068AA1D206"

@@ -1,0 +1,11 @@
+#! /usr/bin/env bash
+
+layouts=/home/trev/.local/share/scripts/layouts
+hdmi_plugged=$(xrandr|grep ' connected'|grep 'HDMI'|awk '{print $1}')
+
+if [ -z "$hdmi_plugged" ];
+then
+  exec "$layouts/laptop";
+else
+  exec "$layouts/monitor_plugged_in";
+fi

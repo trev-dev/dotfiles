@@ -35,6 +35,7 @@ fzf
 neofetch
 neomutt
 notmuch
+urlscan
 isync
 pandoc-cli
 ranger
@@ -44,10 +45,12 @@ vdirsyncer
 ncpamixer
 lazygit
 ledger
+msmtp
 wget
 taskwarrior-tui
 task
 timew
+w3m
 # }}}
 
 # Desktop Environments (xorg, plasma, xmonad) {{{1
@@ -127,6 +130,7 @@ element-desktop
 firefox
 telegram-desktop
 maptool-bin
+slack-desktop
 
 # Fonts
 ttf-carlito

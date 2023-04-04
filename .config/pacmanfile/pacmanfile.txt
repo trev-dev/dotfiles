@@ -1,4 +1,4 @@
-# base
+# Base {{{
 base
 base-devel
 bluez
@@ -21,8 +21,9 @@ sshfs
 zsa-wally
 sudo
 yay
+# }}}
 
-# Shell
+# Shell {{{
 alacritty
 bash-completion
 borg
@@ -32,6 +33,9 @@ khal
 libqalculate
 fzf
 neofetch
+neomutt
+notmuch
+isync
 pandoc-cli
 ranger
 gvim
@@ -44,10 +48,11 @@ wget
 taskwarrior-tui
 task
 timew
+# }}}
 
-# Desktop Environments (xorg, plasma, xmonad)
+# Desktop Environments (xorg, plasma, xmonad) {{{1
 
-## Xorg Deps
+## Xorg Deps {{{2
 xorg-bdftopcf
 xorg-docs
 xorg-fonts-100dpi
@@ -97,13 +102,14 @@ xorg-xwininfo
 xorg-xwud
 xclip
 xf86-video-vesa
+# }}}2
 
-# Plasma
+## Plasma
 dolphin
 plasma-meta
 kwalletmanager
 
-# Xmonad
+## Xmonad
 dmenu
 dunst
 feh
@@ -114,8 +120,9 @@ scrot
 sysstat
 trayer
 xmobar
+# }}}1
 
-# Applications
+# Gui Apps
 element-desktop
 firefox
 telegram-desktop
@@ -127,5 +134,6 @@ ttf-firacode-nerd
 
 # Developer
 nodejs-lts-hydrogen
+nim
 
-# vim: ft=conf
+# vim: ft=conf fdm=marker

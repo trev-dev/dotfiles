@@ -1,6 +1,9 @@
 # Dotfiles
 These are managed with git, using tips found [here](https://www.atlassian.com/git/tutorials/dotfiles)
 
+**Note:** This is a mirror, and may not always be up-to-date.  Consider checking
+out [sourcehut](https://git.sr.ht/~trevdev/dotfiles)
+
 ## Installation
 1. To install these, make an alias and the following git ignore so that cloning
 goes well:
